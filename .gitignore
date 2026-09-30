@@ -1,0 +1,23 @@
+.env
+.env.*
+!.env.example
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Fetched signals are regeneratable derivatives — only keep the analyzer output.
+knowledges/*-signals/
+
+# Term DB is regenerable from signals, and classifications from Claude subagents.
+knowledges/terms.db
+
+# Cron / pipeline logs
+logs/
+
+# Node / Vite build artifacts
+webapp/node_modules/
+webapp/dist/
+
+.DS_Store

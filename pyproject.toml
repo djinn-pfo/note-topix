@@ -1,0 +1,23 @@
+[project]
+name = "note-topix"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "en-core-web-sm",
+    "fastapi>=0.141.1",
+    "markdown>=3.10.3",
+    "networkx>=3.6.1",
+    "pandas>=3.0.5",
+    "python-multipart>=0.0.32",
+    "pyvis>=0.3.2",
+    "spacy>=3.8.16",
+    "streamlit>=1.64.0",
+    "sudachidict-core>=20260723",
+    "sudachidict-full>=20260723",
+    "sudachipy>=0.6.11",
+    "uvicorn[standard]>=0.53.0",
+    "yt-dlp>=2026.8.19",
+]
+
+[tool.uv.sources]
+en-core-web-sm = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl" }
